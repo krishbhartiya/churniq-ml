@@ -1,0 +1,57 @@
+# CHURNIQ — RUN THIS FIRST
+
+## 1. Open the academic notebook
+Open:
+notebooks/Telecom_Customer_Churn_20_Marks.ipynb
+
+Run it in VS Code Jupyter or Google Colab. The notebook is the academic core of the project.
+
+## 2. Launch the web application
+Open a terminal at the project root:
+
+python3 -m pip install -r deployment/requirements.txt
+python3 -m streamlit run deployment/app.py
+
+Then open:
+http://localhost:8501
+
+## 3. What to check in the upgraded UI
+
+### Overview
+- Compact project telemetry cards
+- Contract/churn visual summary
+- Clean 5-step ML workflow
+
+### Customer Analytics
+- Filters for contract, internet service and churn outcome
+- Compact churn-rate and tenure charts
+- Interactive 3D tenure / monthly-charge / total-charge landscape
+- Attribute-level churn table
+
+### Model Lab
+- All five required algorithms visible at once
+- Accuracy, Precision, Recall, F1 and ROC-AUC comparison
+- Confusion matrix selector
+- 3D Precision / Recall / F1 model landscape
+- Stratified 5-fold cross-validation
+- Clear explanation of recall-first model selection
+
+### Predictor
+- Model control is available from the left sidebar from the start
+- Choose Auto (Recall-first) or any of the five required algorithms
+- Custom profile + real highest-risk / lowest-risk demo profiles
+- Configurable probability threshold
+- HIGH / LOW plus CRITICAL / HIGH / WATCH / LOW risk band
+- Probability, threshold, model and customer snapshot
+- Human-readable signal explanation
+- Explicit explanation of probability vs decision threshold
+
+### Methodology
+- Dataset
+- Preprocessing
+- Algorithms
+- Metrics
+- Limitations
+
+## Important
+The app and notebook use the IBM Telco Customer Churn sample dataset. The CSV is downloaded automatically if it is not already in `data/`.
